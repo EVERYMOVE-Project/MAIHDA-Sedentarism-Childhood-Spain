@@ -1,0 +1,23 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Folders to ignore
+Archive/
+Figures/
+Luis/
+Raw Data/
+Resources/
+
+# Files to ignore
+dt_maihda.dta
+dt_maihda.RData
+dt_strata1.dta
+dt_strata1.RData
+maihda.RData
+maihda_stratum.RData
+maihda2.RData
+maihda2_stratum.RData
+maihda3_stratum.RData
+maihda4_stratum.RData
