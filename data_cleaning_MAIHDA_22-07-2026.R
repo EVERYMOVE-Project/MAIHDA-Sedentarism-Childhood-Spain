@@ -27,113 +27,113 @@ setwd("~/UAH/PhD Documents/INEdatos/Analysis")
 
 ## ENSE 2003 ####
 ## menores
-menores2003 <- read_excel("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2003ENSE/Infantil-ENSE-2003/codebook_menores2003.xlsx")
+menores2003 <- read_excel("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2003ENSE/Infantil-ENSE-2003/codebook_menores2003.xlsx")
 names_menores2003 <- menores2003$VARIABLE
 width_menores2003  <- menores2003$LONGITUD %>% as.numeric
 
-menores2003 <- read_fwf("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2003ENSE/Infantil-ENSE-2003/INFANT03.txt", col_positions = fwf_widths(widths = width_menores2003, col_names = names_menores2003))
+menores2003 <- read_fwf("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA//Raw Data/2003ENSE/Infantil-ENSE-2003/INFANT03.txt", col_positions = fwf_widths(widths = width_menores2003, col_names = names_menores2003))
 rm(names_menores2003, width_menores2003)
 
 ## hogar
-hogar2003 <- read_excel("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2003ENSE/Hogar-ENSE-2003/codebook_hogar2003.xlsx")
+hogar2003 <- read_excel("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2003ENSE/Hogar-ENSE-2003/codebook_hogar2003.xlsx")
 names_hogar2003 <- hogar2003$VARIABLE
 width_hogar2003  <- hogar2003$LONGITUD %>% as.numeric
 
-hogar2003 <- read_fwf("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2003ENSE/Hogar-ENSE-2003/HOGAR03.txt", col_positions = fwf_widths(widths = width_hogar2003, col_names = names_hogar2003))
+hogar2003 <- read_fwf("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2003ENSE/Hogar-ENSE-2003/HOGAR03.txt", col_positions = fwf_widths(widths = width_hogar2003, col_names = names_hogar2003))
 rm(names_hogar2003, width_hogar2003)
 
 ## adultos (16-18)
-adultos2003 <- read_excel("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2003ENSE/Adultos-ENSE-2003/codebook_adultos2003.xlsx")
+adultos2003 <- read_excel("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2003ENSE/Adultos-ENSE-2003/codebook_adultos2003.xlsx")
 names_adultos2003 <- adultos2003$VARIABLE
 width_adultos2003  <- adultos2003$LONGITUD %>% as.numeric
 
-adultos2003 <- read_fwf("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2003ENSE/Adultos-ENSE-2003/ADULTO03.txt", col_positions = fwf_widths(widths = width_adultos2003, col_names = names_adultos2003))
+adultos2003 <- read_fwf("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2003ENSE/Adultos-ENSE-2003/ADULTO03.txt", col_positions = fwf_widths(widths = width_adultos2003, col_names = names_adultos2003))
 rm(names_adultos2003, width_adultos2003)
 
 ## ENSE 2006 ####
-menores2006 <- read_excel("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2006ENSE/Infantil-ENSE-2006/codebook_menores2006.xlsx")
+menores2006 <- read_excel("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2006ENSE/Infantil-ENSE-2006/codebook_menores2006.xlsx")
 names_menores2006 <- menores2006$VARIABLE
 width_menores2006  <- menores2006$LONGITUD %>% as.numeric
 
-menores2006 <- read_fwf("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2006ENSE/Infantil-ENSE-2006/INFANT06.txt", col_positions = fwf_widths(widths = width_menores2006, col_names = names_menores2006))
+menores2006 <- read_fwf("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2006ENSE/Infantil-ENSE-2006/INFANT06.txt", col_positions = fwf_widths(widths = width_menores2006, col_names = names_menores2006))
 rm(names_menores2006, width_menores2006)
 
 ## hogar
-hogar2006 <- read_excel("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2006ENSE/Hogar-ENSE-2006/codebook_hogar2006.xlsx")
+hogar2006 <- read_excel("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2006ENSE/Hogar-ENSE-2006/codebook_hogar2006.xlsx")
 names_hogar2006 <- hogar2006$VARIABLE
 width_hogar2006  <- hogar2006$LONGITUD %>% as.numeric
 
-hogar2006 <- read_fwf("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2006ENSE/Hogar-ENSE-2006/HOGAR06.txt", col_positions = fwf_widths(widths = width_hogar2006, col_names = names_hogar2006))
+hogar2006 <- read_fwf("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2006ENSE/Hogar-ENSE-2006/HOGAR06.txt", col_positions = fwf_widths(widths = width_hogar2006, col_names = names_hogar2006))
 rm(names_hogar2006, width_hogar2006)
 
 ## adultos (16-18)
-adultos2006 <- read_excel("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2006ENSE/Adulto-ENSE-2006/codebook_adultos2006.xlsx")
+adultos2006 <- read_excel("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2006ENSE/Adulto-ENSE-2006/codebook_adultos2006.xlsx")
 names_adultos2006 <- adultos2006$VARIABLE
 width_adultos2006  <- adultos2006$LONGITUD %>% as.numeric
 
-adultos2006 <- read_fwf("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2006ENSE/Adulto-ENSE-2006/ADULTO06.txt", col_positions = fwf_widths(widths = width_adultos2006, col_names = names_adultos2006))
+adultos2006 <- read_fwf("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2006ENSE/Adulto-ENSE-2006/ADULTO06.txt", col_positions = fwf_widths(widths = width_adultos2006, col_names = names_adultos2006))
 rm(names_adultos2006, width_adultos2006)
 
 ## ENSE 2011 ####
-menores2012 <- read_excel("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2012ENSE/codebook_menores2011.xlsx")
+menores2012 <- read_excel("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2012ENSE/codebook_menores2011.xlsx")
 names_menores2012 <- menores2012$VARIABLE
 width_menores2012  <- menores2012$LONGITUD %>% as.numeric
 
-menores2012 <- read_fwf("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2012ENSE/datos_ensalud12/INFANT12.txt", col_positions = fwf_widths(widths = width_menores2012, col_names = names_menores2012))
+menores2012 <- read_fwf("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2012ENSE/datos_ensalud12/INFANT12.txt", col_positions = fwf_widths(widths = width_menores2012, col_names = names_menores2012))
 rm(names_menores2012, width_menores2012)
 
 ## hogar
-hogar2012 <- read_excel("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2012ENSE/codebook_hogar2011.xlsx")
+hogar2012 <- read_excel("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2012ENSE/codebook_hogar2011.xlsx")
 names_hogar2012 <- hogar2012$VARIABLE
 width_hogar2012  <- hogar2012$LONGITUD %>% as.numeric
 
-hogar2012 <- read_fwf("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2012ENSE/datos_ensalud12/HOGAR12.txt", col_positions = fwf_widths(widths = width_hogar2012, col_names = names_hogar2012))
+hogar2012 <- read_fwf("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2012ENSE/datos_ensalud12/HOGAR12.txt", col_positions = fwf_widths(widths = width_hogar2012, col_names = names_hogar2012))
 rm(names_hogar2012, width_hogar2012)
 
 ## adultos (16-18)
-adultos2011 <- read_excel("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2012ENSE/codebook_adultos2011.xlsx")
+adultos2011 <- read_excel("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2012ENSE/codebook_adultos2011.xlsx")
 names_adultos2011 <- adultos2011$VARIABLE
 width_adultos2011  <- adultos2011$LONGITUD %>% as.numeric
 
-adultos2011 <- read_fwf("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2012ENSE/datos_ensalud12/ADULTO12.txt", col_positions = fwf_widths(widths = width_adultos2011, col_names = names_adultos2011))
+adultos2011 <- read_fwf("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2012ENSE/datos_ensalud12/ADULTO12.txt", col_positions = fwf_widths(widths = width_adultos2011, col_names = names_adultos2011))
 rm(names_adultos2011, width_adultos2011)
 
 ## ENSE 2017 ####
-menores2017 <- read_excel("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2017ENSE/codebook_menores2017.xlsx")
+menores2017 <- read_excel("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2017ENSE/codebook_menores2017.xlsx")
 names_menores2017 <- menores2017$VARIABLE
 width_menores2017  <- menores2017$LONGITUD %>% as.numeric
 
-menores2017 <- read_fwf("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2017ENSE/Menores_ENSE17/MICRODAT.CM.txt", col_positions = fwf_widths(widths = width_menores2017, col_names = names_menores2017))
+menores2017 <- read_fwf("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2017ENSE/Menores_ENSE17/MICRODAT.CM.txt", col_positions = fwf_widths(widths = width_menores2017, col_names = names_menores2017))
 rm(names_menores2017, width_menores2017)
 
 ## hogar
-hogar2017 <- read_excel("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2017ENSE/codebook_hogar2017.xlsx")
+hogar2017 <- read_excel("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2017ENSE/codebook_hogar2017.xlsx")
 names_hogar2017 <- hogar2017$VARIABLE
 width_hogar2017  <- hogar2017$LONGITUD %>% as.numeric
 
-hogar2017 <- read_fwf("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2017ENSE/HOGAR_ENSE17/MICRODAT.CH.txt", col_positions = fwf_widths(widths = width_hogar2017, col_names = names_hogar2017))
+hogar2017 <- read_fwf("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2017ENSE/HOGAR_ENSE17/MICRODAT.CH.txt", col_positions = fwf_widths(widths = width_hogar2017, col_names = names_hogar2017))
 rm(names_hogar2017, width_hogar2017)
 
 ## adultos (16-18)
-adultos2017 <- read_excel("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2017ENSE/codebook_adultos2017.xlsx")
+adultos2017 <- read_excel("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2017ENSE/codebook_adultos2017.xlsx")
 names_adultos2017 <- adultos2017$VARIABLE
 width_adultos2017  <- adultos2017$LONGITUD %>% as.numeric
 
-adultos2017 <- read_fwf("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2017ENSE/Adultos_ENSE2017/MICRODAT.CA.txt", col_positions = fwf_widths(widths = width_adultos2017, col_names = names_adultos2017))
+adultos2017 <- read_fwf("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2017ENSE/Adultos_ENSE2017/MICRODAT.CA.txt", col_positions = fwf_widths(widths = width_adultos2017, col_names = names_adultos2017))
 rm(names_adultos2017, width_adultos2017)
 
 ## ENSE 2023 ####
 ## menores
-load("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2023ESdE/ESdEmenor_2023/R/INFANT23.RData")
+load("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2023ESdE/ESdEmenor_2023/R/INFANT23.RData")
 menores2023 <- Microdatos
 
 ## hogar
-load("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2023ESdE/ESdEhogar_2023/R/HOGAR23.RData")
+load("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2023ESdE/ESdEhogar_2023/R/HOGAR23.RData")
 hogar2023 <- Microdatos
 rm(Microdatos, Metadatos)
 
 ## adultos (16-18)
-load("~/UAH/PhD Documents/INEdatos/Analysis/Raw Data/2023ESdE/ESdEadulto_2023/R/ADULTO23.RData")
+load("~/UAH/PhD Documents/INEdatos/INEanalysisMAIHDA/Raw Data/2023ESdE/ESdEadulto_2023/R/ADULTO23.RData")
 adultos2023 <- Microdatos
 rm(Microdatos, Metadatos)
 
